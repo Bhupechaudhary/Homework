@@ -8,111 +8,188 @@
     <title> Home Work</title>
     <style>
         h1 {
-            border-top: 8px solid rgb(8, 2, 16);
             background: rgba(49, 165, 26, 1);
             color: rgb(79, 29, 179);
             text-align: center;
             padding: 5px;
             /* "Merriweather" font is not found*/
             font-family: 'Courier New', Courier, monospace;
-
         }
-
-        img {
-            border-radius: 50%;
-            border: green dashed 3px;
+        
+        .profile-pic {
             margin: 15px;
             height: 120px;
             width: 110px;
+            border-radius: 50%;
+            border: 3px dashed green;
         }
-
-        p {
-            margin: 7px;
-            font-family: 'poppins', Courier New, Courier, monospace;
-            background: wheat;
-            /* padding: 15px; */
-            border: black solid 2px;
-            width:100%;
+        
+        .first-para {
+            border: none;
+            border-left: 4px solid red;
+            background-color: rgba(19, 197, 19, 0.32);
+            height: 99px;
         }
-        h2{
-            background: rgb(0, 29, 53) ;
+        
+        .sec-para {
+            border: none;
+            border-left: 4px solid #0000ff;
+            background-color: #0000ff46;
+            height: 130px;
+        }
+        
+        .btn-login {
+            background: rgb(26, 214, 29);
+            border: 3px solid transparent;
+            padding: 8px;
+            font-size: 12pt;
+            width: 12em;
+            margin-left: 10em;
+            font-weight: 700;
+        }
+        
+        .btn-login:hover {
+            background-color: transparent;
+            border: 3px solid #1ad6ad;
+            cursor: pointer;
+        }
+        
+        .btn-register {
+            background: rgb(232, 236, 232);
+            border: 3px solid rgb(128, 70, 220);
+            padding: 8px;
+            font-size: 12pt;
+            width: 12em;
+            margin-left: 25em;
+            font-weight: 700;
+        }
+        
+        .buttons {
+            justify-content: space-evenly;
+        }
+        
+        .foot-header {
+            background: #086d76;
             color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            padding: 7px;
         }
-        .Name{
-            height:300px;
-            width: 800px;
-            margin-left:70px;
+        
+        .h3 {
+            background: rgb(25, 25, 135);
+            color: wheat;
+            padding: 7px;
         }
-        table img {
-            height: 300px;
-            width: 300px;
+        
+        .follow-list {
+            display: flex;
+            list-style: none;
+            justify-content: space-evenly;
         }
+        
+        .follow-list-anchor {
+            text-decoration: none;
+            color: rgb(148, 14, 103);
+            font-weight: 700;
+            font-family: 'Merriweather';
+        }
+        
+        .body-heading {
+            background: #1a62a5df;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+            font-family: 'Merriweather';
+        }
+        
+        .profile-pic2 {
+            height: 180px;
+            width: 150px;
+            border-radius: 5%;
+            border: 3px solid rgb(176, 189, 176);
+        }
+        
+        .Name {
+            border: none;
+            border-bottom: 4px solid green;
+            background-color: #d2eb11dc;
+            height: 180px;
+            width: auto;
+            margin-left: 20px;
+        }
+        /* .first-para,
+        .sec-para,
+        .third-para {
+            margin: 7px;
+            font-family: "poppins";
+            background-color: wheat;
+            padding: 15px;
+            border: 2px solid black;
+        } */
     </style>
 </head>
 
 <body>
-     <!-- This is header tag -->
-     <h1> This is My personal Website</h1>
+    <div>
+        <h1 class="body-heading"> This is My personal Website</h1>
+        <table>
+            <tr>
+                <td>
+                    <img class="profile-pic" src="/image/profile-pic.jpg" alt="This is my picture" />
+                </td>
+                <td>
+                    <P class="first-para">
+                        Hey,this is my homepage,so I have to say something about myself. Sometimes it is hard to introduce youself because you know youself do well that you do not know where to start with. Let me give a try to see what kind of image you have about me through
+                        my self-description. I hope that my impression about myself and your impression about me are not so different.Here it goes.
+                    </P>
+                </td>
+            </tr>
+            <!-- This is paragraph Tag -->
 
-    <img src="./profile-pic.jpg" alt=" My-profile-pic">
-   
-    <!-- This is paragraph Tag -->
-    <P>
-        Hey,this is my homepage,so I have to say something about myself. Sometimes 
-        it is hard to introduce youself because you know youself do well that you do 
-        not know where to start with. Let me give a try to see what kind of image you 
-        have about me through my self-description. I hope that my impression about 
-        myself and your impression about me are not so different.Here it goes.
-    </P>
-
-    <p>
-        I am a person who is positive about every aspect of life. There are many things I 
-        like to do, to see, and to experience. I like to read, I like to write; I like to think, I 
-        like to dream; I like to talk, I like to listen. I like to see the sunrise in the morning, I 
-        like to see the moonlight at night; I like to feel the music flowing on my face, I 
-        like to smell the wind coming from the ocean. I like to look at the clouds in the 
-        sky with a blank mind, I like to do through experiment when i cannot sleep in
-        the middle of the night.I like flowers in spring,rain in summer,leaves in automn,
-        and snow in winter. I like to sleep early, I like to get up late; I like to be alone, I
-        like to be surrounded by people. I like country's peace, like metropolis'noise; I
-        like the beautiful west lake in Hangzhou, I like the flat cornfield in champaign. I 
-        like delicious food and comfortable shoes; I like good books and romantic
-        movies. I like the land and the nature, I like people. And, I like te laugh.
-    </p>
-
-
+        </table>
+    </div>
+    <div>
+        <p class="sec-para">
+            I am a person who is positive about every aspect of life. There are many things I like to do, to see, and to experience. I like to read, I like to write; I like to think, I like to dream; I like to talk, I like to listen. I like to see the sunrise in
+            the morning, I like to see the moonlight at night; I like to feel the music flowing on my face, I like to smell the wind coming from the ocean. I like to look at the clouds in the sky with a blank mind, I like to do through experiment when
+            i cannot sleep in the middle of the night.I like flowers in spring,rain in summer,leaves in automn, and snow in winter. I like to sleep early, I like to get up late; I like to be alone, I like to be surrounded by people. I like country's peace,
+            like metropolis'noise; I like the beautiful west lake in Hangzhou, I like the flat cornfield in champaign. I like delicious food and comfortable shoes; I like good books and romantic movies. I like the land and the nature, I like people. And,
+            I like te laugh.
+        </p>
+    </div>
 
     <table>
-      
-       <tr>
-           <td> <img src="./profile-pic.jpg" alt=" This is my favroit picture"></td>
-           <td>
-            <P class="Name">
-               
-                I always wantted to be  great writer, like  Victor Hugo who wrote "Les Miserable", Or like Roman Roland who wrote "Jone Christopher".
-                They have  infuenced millions of people through their books. I also wanted to be a great psychologist, like William james or Sigmund Freud,
-                who could read people's mind. Of course, i am nowhere close to these people, yet I am just someone who does some teaching,
-                some research, and some writing. But my dream is still alive.
-        
-            </P>
-           </td>
-       </tr>
 
+        <tr>
+            <td> <img class="profile-pic2" src="image/profile-pic.jpg" alt=" This is my favroit picture"></td>
+            <td>
+                <P class="Name">
 
-       
-            
-          
-        
+                    I always wantted to be great writer, like Victor Hugo who wrote "Les Miserable", Or like Roman Roland who wrote "Jone Christopher". They have infuenced millions of people through their books. I also wanted to be a great psychologist, like William james
+                    or Sigmund Freud, who could read people's mind. Of course, i am nowhere close to these people, yet I am just someone who does some teaching, some research, and some writing. But my dream is still alive.
 
+                </P>
+            </td>
+        </tr>
     </table>
-    <Button>login</Button> <button>Register</button>
-    <div class="Bhupe">
-        <h2>Follow me on:</h2>
+    <div class="buttons">
+        <Button class="btn-login">login</Button>
+        <button class="btn-register">Register</button>
     </div>
-    <ul>
-        <li>Facebook</li>
-        <li>Instagram</li>
-        <li>Twitter</li>
+    <div class="Bhupe">
+        <h3 class="foot-header">Follow me on:</h3>
+    </div>
+    <ul class="follow-list">
+        <li>
+            <a class="follow-list-anchor" href="https://www.facebook.com/ningsan.jabegu">Facebook</li></a>
+            <li>
+                <a class="follow-list-anchor" href="https://www.instagram.com/nh_jabegu" target="_blank">Instagram
+        </li></a>
+                <li>
+                    <a class="follow-list-anchor" href="https://www.twitter.com/jabeguNingsang" target="_blank">Twitter
+        </li></a>
     </ul>
 
 
